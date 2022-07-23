@@ -2,7 +2,7 @@ use std::error::Error;
 use std::path::PathBuf;
 use std::{env, process};
 
-const LIBVIRT_VERSION: &str = "6.0.0";
+const LIBVIRT_VERSION: &str = "5.0.0";
 
 fn main() {
     match run() {

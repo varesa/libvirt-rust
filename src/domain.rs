@@ -1649,7 +1649,7 @@ impl Domain {
                 self.as_ptr(),
                 string_to_c_chars!(duri),
                 flags as libc::c_ulong,
-                string_to_c_chars!(""),
+                std::ptr::null(),
                 bandwidth as libc::c_ulong,
             );
             if ret == -1 {
